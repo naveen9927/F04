@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: 'Balsamiq Sans', cursive;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/9.jpg');
+        background-size: 1550px 750px;
+        width: auto;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        /* border: 2px solid red; */
+
+    }
+
+    .left img {
+        width: 90px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+        /* border: 2px solid white; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid rgb(204, 233, 37); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: blueviolet;
+
+    }
+
+    .btn {
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 0px 9px;
+        color: aliceblue;
+        background-color: rgb(153, 130, 130);
+        padding: 4px 14px;
+        border: 2px solid rgb(168, 153, 153);
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        margin: 110px 5px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .container h1{
+        text-align: center;
+    }
+
+    .form-group input {
+        font-family: 'Balsamiq Sans', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        margin: 10px auto;
+        font-size: 15px;
+        border-radius: 30px;
+        /* border: 2px solid red; */
+
+    }
+    .container button{
+        display: block;
+        width: 400px;
+        margin: 20px auto;
+
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/5.avif" alt="">
+            <div>Fitness Club</div>
+
+        </div>
+        <!-- mid box for navbar -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calcuator</a></li>
+                <li><a href="#">Contct Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">E-mail Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in the Meerut Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your E-mail ">
+            </div>
+            <button class="btn">Sumbit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
